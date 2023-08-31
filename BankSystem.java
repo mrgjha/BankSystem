@@ -116,53 +116,53 @@ public class BankSystem extends JFrame implements ActionListener, ItemListener {
 		//Creating the MenuItems of Program.
 		//MenuItems for FileMenu.
 		addNew = new JMenuItem ("Open New Account", new ImageIcon ("Images/Open.gif"));
-		addNew.setAccelerator (KeyStroke.getKeyStroke(KeyEvent.VK_N, Event.CTRL_MASK));
+		addNew.setAccelerator (KeyStroke.getKeyStroke(KeyEvent.VK_N, KeyEvent.CTRL_DOWN_MASK));
 		addNew.setMnemonic ((int)'N');
 		addNew.addActionListener (this);
 		printRec = new JMenuItem ("Print Customer Balance", new ImageIcon ("Images/New.gif"));
-		printRec.setAccelerator (KeyStroke.getKeyStroke(KeyEvent.VK_R, Event.CTRL_MASK));
+		printRec.setAccelerator (KeyStroke.getKeyStroke(KeyEvent.VK_R, KeyEvent.CTRL_DOWN_MASK));
 		printRec.setMnemonic ((int)'R');
 		printRec.addActionListener (this);
 		end = new JMenuItem ("Quit BankSystem ?", new ImageIcon ("Images/export.gif"));
-		end.setAccelerator (KeyStroke.getKeyStroke(KeyEvent.VK_Q, Event.CTRL_MASK));
+		end.setAccelerator (KeyStroke.getKeyStroke(KeyEvent.VK_Q, KeyEvent.CTRL_DOWN_MASK));
 		end.setMnemonic ((int)'Q');	
 		end.addActionListener (this);
 
 		//MenuItems for EditMenu.
 		deposit = new JMenuItem ("Deposit Money");
-		deposit.setAccelerator (KeyStroke.getKeyStroke(KeyEvent.VK_T, Event.CTRL_MASK));
+		deposit.setAccelerator (KeyStroke.getKeyStroke(KeyEvent.VK_T, KeyEvent.CTRL_DOWN_MASK));
 		deposit.setMnemonic ((int)'T');
 		deposit.addActionListener (this);
 		withdraw = new JMenuItem ("Withdraw Money");
-		withdraw.setAccelerator (KeyStroke.getKeyStroke(KeyEvent.VK_W, Event.CTRL_MASK));
+		withdraw.setAccelerator (KeyStroke.getKeyStroke(KeyEvent.VK_W, KeyEvent.CTRL_DOWN_MASK));
 		withdraw.setMnemonic ((int)'W');	
 		withdraw.addActionListener (this);
 		delRec = new JMenuItem ("Delete Customer", new ImageIcon ("Images/Delete.gif"));
-		delRec.setAccelerator (KeyStroke.getKeyStroke(KeyEvent.VK_D, Event.CTRL_MASK));
+		delRec.setAccelerator (KeyStroke.getKeyStroke(KeyEvent.VK_D, KeyEvent.CTRL_DOWN_MASK));
 		delRec.setMnemonic ((int)'D');
 		delRec.addActionListener (this);
 		search = new JMenuItem ("Search By No.", new ImageIcon ("Images/find.gif"));
-		search.setAccelerator (KeyStroke.getKeyStroke(KeyEvent.VK_S, Event.CTRL_MASK));
+		search.setAccelerator (KeyStroke.getKeyStroke(KeyEvent.VK_S, KeyEvent.CTRL_DOWN_MASK));
 		search.setMnemonic ((int)'S');	
 		search.addActionListener (this);
 		searchName = new JMenuItem ("Search By Name");
-		searchName.setAccelerator (KeyStroke.getKeyStroke(KeyEvent.VK_M, Event.CTRL_MASK));
+		searchName.setAccelerator (KeyStroke.getKeyStroke(KeyEvent.VK_M, KeyEvent.CTRL_DOWN_MASK));
 		searchName.setMnemonic ((int)'M');
 		searchName.addActionListener (this);
 
 		//MenuItems for ViewMenu.
 		oneByOne = new JMenuItem ("View One By One");
-		oneByOne.setAccelerator (KeyStroke.getKeyStroke(KeyEvent.VK_O, Event.CTRL_MASK));
+		oneByOne.setAccelerator (KeyStroke.getKeyStroke(KeyEvent.VK_O, KeyEvent.CTRL_DOWN_MASK));
 		oneByOne.setMnemonic ((int)'O');	
 		oneByOne.addActionListener (this);
 		allCustomer = new JMenuItem ("View All Customer", new ImageIcon ("Images/refresh.gif"));
-		allCustomer.setAccelerator (KeyStroke.getKeyStroke(KeyEvent.VK_A, Event.CTRL_MASK));
+		allCustomer.setAccelerator (KeyStroke.getKeyStroke(KeyEvent.VK_A, KeyEvent.CTRL_DOWN_MASK));
 		allCustomer.setMnemonic ((int)'A');
 		allCustomer.addActionListener (this);
 
 		//MenuItems for OptionMenu.
 		change = new JMenuItem ("Change Background Color");
-		change.setAccelerator (KeyStroke.getKeyStroke(KeyEvent.VK_B, Event.CTRL_MASK));
+		change.setAccelerator (KeyStroke.getKeyStroke(KeyEvent.VK_B, KeyEvent.CTRL_DOWN_MASK));
 		change.setMnemonic ((int)'B');
 		change.addActionListener (this);
 		//Menu For Changing the Program's Layout.
@@ -190,15 +190,16 @@ public class BankSystem extends JFrame implements ActionListener, ItemListener {
 
 		//MenuItems for HelpMenu.
 		content = new JMenuItem ("Help Contents", new ImageIcon ("Images/paste.gif"));
-		content.setAccelerator (KeyStroke.getKeyStroke(KeyEvent.VK_H, Event.CTRL_MASK));
+		content.setAccelerator (KeyStroke.getKeyStroke(KeyEvent.VK_H, KeyEvent.CTRL_DOWN_MASK));
+		
 		content.setMnemonic ((int)'H');
 		content.addActionListener (this);
 		keyHelp = new JMenuItem ("Help on Shortcuts...");
-		keyHelp.setAccelerator (KeyStroke.getKeyStroke(KeyEvent.VK_K, Event.CTRL_MASK));
+		keyHelp.setAccelerator (KeyStroke.getKeyStroke(KeyEvent.VK_K, KeyEvent.CTRL_DOWN_MASK));
 		keyHelp.setMnemonic ((int)'K');
 		keyHelp.addActionListener (this);
 		about = new JMenuItem ("About BankSystem", new ImageIcon ("Images/Save.gif"));
-		about.setAccelerator (KeyStroke.getKeyStroke(KeyEvent.VK_C, Event.CTRL_MASK));
+		about.setAccelerator (KeyStroke.getKeyStroke(KeyEvent.VK_C, KeyEvent.CTRL_DOWN_MASK));
 		about.setMnemonic ((int)'C');
 		about.addActionListener (this);
 
