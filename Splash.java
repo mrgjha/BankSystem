@@ -4,6 +4,10 @@ import javax.swing.border.LineBorder;
 
 public class Splash extends JWindow {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private Dimension d = Toolkit.getDefaultToolkit().getScreenSize();
 
 	public Splash () {
@@ -18,8 +22,7 @@ public class Splash extends JWindow {
 		setSize (getSize().width, getSize().height);
 		setLocation (d.width / 2 - getWidth() / 2, d.height / 2 - getHeight() / 2);
 
-		show();
-
+		setVisible(true);
 		for (int i = 0; i <= 1000; i++) { }
 
 		new BankSystem ();
