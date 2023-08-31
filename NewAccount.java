@@ -5,10 +5,17 @@ import java.io.*;
 
 public class NewAccount extends JInternalFrame implements ActionListener {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private JPanel jpInfo = new JPanel();
 	private JLabel lbNo, lbName, lbDate, lbDeposit;
 	private JTextField txtNo, txtName, txtDeposit;
-	private JComboBox cboMonth, cboDay, cboYear;
+	private JComboBox<String> cboMonth, cboDay, cboYear;
+	
+	
+	
 	private JButton btnSave, btnCancel;
 
 	private int count = 0;
@@ -80,9 +87,9 @@ public class NewAccount extends JInternalFrame implements ActionListener {
 		//Creating Date Option.
 		String Months[] = {"January", "February", "March", "April", "May", "June",
 			"July", "August", "September", "October", "November", "December"};
-		cboMonth = new JComboBox (Months);
-		cboDay = new JComboBox ();
-		cboYear = new JComboBox ();
+		cboMonth = new JComboBox<> (Months);
+		cboDay = new JComboBox<> ();
+		cboYear = new JComboBox<> ();
 		for (int i = 1; i <= 31; i++) {
 			String days = "" + i;
 			cboDay.addItem (days);
