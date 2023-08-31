@@ -10,6 +10,11 @@ import javax.swing.plaf.metal.*;
 
 public class BankSystem extends JFrame implements ActionListener, ItemListener {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	//Main Place on Form where All Child Forms will Shown.
 	private JDesktopPane desktop = new JDesktopPane ();
 
